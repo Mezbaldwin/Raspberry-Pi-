@@ -9,13 +9,13 @@ def SwitchGPSon():
     print ("Switching GPS on ...")
     reply = gsm.command('AT+CGNSPWR=1')
     print(reply)
-    print
+    
 
 def SwitchGPSoff():
     print ("Switching GPS off ...")
     reply = gsm.command('AT+CGNSPWR=0')
     print(reply)
-    print
+    
     
 def SendGPSPosition():
     print ("Getting GPS position ...")
@@ -33,7 +33,7 @@ def SendGPSPosition():
 
 
 # Set mobile number here
-MobileNumber = "07950710***"
+MobileNumber = "07950710533"
 lastmessage = 'Stop'
 
 print ("Booting modem ...")
@@ -51,11 +51,11 @@ if len(reply) > 1:
 	list = reply[0].split(",")
 	phone = list[1].strip('\"')
 	print ("Phone number = " + phone)
-print
+
 	
 print ("Deleting old messages ...")
 gsm.query("AT+CMGD=70,4")
-print
+
 
 SwitchGPSon()
 
@@ -84,3 +84,5 @@ while True:
 			SendGPSPosition()
 			time.sleep(300)
 		else:
+			time.sleep(10)
+
