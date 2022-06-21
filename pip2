@@ -1,0 +1,13 @@
+pi@raspberrypi:~ $ sudo systemctl restart dphys-swapfile
+pi@raspberrypi:~ $ pip2 install face-recognition
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting face-recognition
+  Using cached https://files.pythonhosted.org/packages/1e/95/f6c9330f54ab07bfa032bf3715c12455a381083125d8880c43cbe76bb3d0/face_recognition-1.3.0-py2.py3-none-any.whl
+Collecting dlib>=19.7 (from face-recognition)
+  Using cached https://files.pythonhosted.org/packages/e5/3b/7a8522a5c2ef6ff6252e46b0788b3d2c2280198c49d6ecf3b576b171045f/dlib-19.24.0.tar.gz
+Collecting face-recognition-models>=0.3.0 (from face-recognition)
+Killed
+pi@raspberrypi:~ $ pip2 install imutils
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Requirement already satisfied: imutils in ./.local/lib/python2.7/site-packages (0.5.4)
+
